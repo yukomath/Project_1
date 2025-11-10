@@ -34,6 +34,9 @@ Author: Yuko (GitHub: yukomath)
 
 ## Acknowledgements
 Stack Overflow Annual Developer Survey 2025 dataset: https://survey.stackoverflow.co/
+
 SHAP documentation: https://shap.readthedocs.io/
+
 Udacity Data Scientist Nanodegree program 
+
 Python libraries: pandas, numpy, scikit-learn, LightGBM, matplotlib, seaborn
