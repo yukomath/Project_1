@@ -9,20 +9,24 @@ The project also provides insights into salary trends across different **countri
 It applies machine learning techniques learned from the Udacity Data Scientist Nanodegree program, including **Linear Regression** and **Random Forest**, as well as **SHAP analysis** to interpret feature importance. Additionally, **LightGBM** is used as an advanced model explored with the help of ChatGPT.
 
 
-## Overview
+## Workflow
 
-This project analyzes the **Stack Overflow Annual Developer Survey 2025** dataset to predict **annual developer salaries** (`ConvertedCompYearly`).
+0. **Preparation** for Googlelab　- Connects Google Drive to the Colab environment, allowing read and write access to files
+1. **Data Preparation** — Loads the dataset from Google Drive, selects relevant columns, handles missing values and outliers, performs one-hot encoding for categorical and multi-valued fields, cleans feature names, and finally splits the data into training and test sets for model development.
+3. **Build a Salary Prediction Model with Linear Regression** - Builds a salary prediction model using Linear Regression. It trains the model on the prepared features, predicts salaries on the test set, evaluates performance using R², MAE, and RMSE, and then examines the regression coefficients to identify which features have the strongest positive and negative impact on predicted salaries.
 
-The notebook walks through a complete data science workflow:
-1. **Data Cleaning and Preparation** — Missing values are handled, and categorical features such as education level, country, and employment type are processed.
-2. **Exploratory Data Analysis (EDA)** — Average salaries are visualized by country and by programming language to understand global trends.
-3. **Feature Engineering** — Numerical and categorical variables are transformed to create meaningful input features for modeling.
-4. **Model Training and Evaluation** — Several models are trained to predict developer salaries:
-   - **Linear Regression** (baseline model)
-   - **Random Forest** (non-linear ensemble model)
-   - **LightGBM** (gradient boosting model for improved accuracy and speed)
-5. **Model Interpretation (Explainability)** — Using **SHAP (SHapley Additive exPlanations)**, the notebook visualizes which features most strongly affect salary predictions.
-6. **Results Visualization** — Predicted vs actual salaries are plotted, and the importance of top 10 factors influencing salaries is summarized.
+4. **Build a Salary Prediction Model with Random Forest** - 
+Builds a salary prediction model using Random Forest. It installs and uses the shap library for feature interpretation, trains a tuned Random Forest regressor on the training data, predicts salaries on the test set, and evaluates the model using R², MAE, and RMSE.
+Additionally, it performs SHAP analysis to visualize how individual features impact predictions and calculates feature importance to identify the most influential factors on salary, such as country, coding experience, and AI tool usage.
+
+5. **Build a Salary Prediction Model with LightGBM** - Builds a salary prediction model using LightGBM. It installs required packages, trains a gradient boosting model on the training data, predicts salaries on the test set, and evaluates performance with R², MAE, and RMSE.
+Additionally, it performs SHAP analysis to interpret feature contributions, visualizes the top 10 most important features, and plots a scatter plot of predicted vs. actual salaries to assess model accuracy.
+
+7. **Review Results** — Reviews and compares the results of all trained models. It creates a summary table of R², MAE, and RMSE for Linear Regression, Random Forest, and LightGBM, and visualizes the comparisons with bar plots.
+Additionally, it performs exploratory analysis to examine average salaries by country and programming language, helping to identify patterns and trends in the dataset that may influence salary predictions.
+
+8. **Example case** — Demonstrates how to use the trained models to predict annual salary for a specific profile across different countries. It prepares the input data, applies the same preprocessing and encoding used during training, and generates salary predictions using Linear Regression, Random Forest, and LightGBM.
+The results are displayed in a formatted table, rounded to two decimal places, and saved as a PNG image for easy sharing or reporting.
 
 
 ## 1. Installation
