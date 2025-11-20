@@ -12,7 +12,7 @@ This project applies machine learning techniques learned from the **Udacity Data
 
 - **project.ipynb** : Main Jupyter notebook containing data preprocessing, model training, evaluation, SHAP analysis, and salary predictions.  
 - **README.md** : Project documentation (this file).
-- **requirements.txt : Lists all Python libraries and their versions required to run the project.  
+- **requirements.txt** : Lists all Python libraries and their versions required to run the project.  
   This file allows anyone to install the exact dependencies using `pip install -r requirements.txt`.
 
 ---
@@ -43,6 +43,7 @@ The following Python libraries were used in this project:
 - scikit-learn==1.6.1  
 - seaborn==0.13.2
 
+---
 
 ## Project Workflow
 
@@ -73,7 +74,6 @@ The following Python libraries were used in this project:
 5. **Clean Column Names**  
    - Replace special characters with underscores for LightGBM compatibility.  
 
----
 
 ### Section 4: Data Modeling
 1. **Train/Test Split**  
@@ -93,7 +93,6 @@ The following Python libraries were used in this project:
    - Evaluate performance with R², MAE, and RMSE.  
    - Perform SHAP analysis to interpret feature contributions and visualize top 10 features.  
 
----
 
 ### Section 5: Evaluate the Results
 
@@ -108,27 +107,4 @@ The following Python libraries were used in this project:
 - Generate predictions with all three models and display results in a formatted table.  
 - Visualize predictions for different experience levels, education, countries and programming languages.  
 
----
 
-## File Description
-project.ipynb : Main notebook 
-README.md : Project documentation (this file).
-
-## Author 
-Author: Yuko (GitHub: yukomath)
-
-## Acknowledgements
-Stack Overflow Annual Developer Survey 2025 dataset: https://survey.stackoverflow.co/
-
-Udacity Data Scientist Nanodegree program 
-
-AI Tool : ChatGPT
-
-## libraries Used 
-The following python libraries were used in this project.
-pandas==2.2.2
-numpy==2.0.2
-matplotlib==3.10.0
-lightgbm==4.6.0
-scikit-learn==1.6.1
-seaborn==0.13.2
