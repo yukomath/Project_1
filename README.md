@@ -12,6 +12,8 @@ This project applies machine learning techniques learned from the **Udacity Data
 
 - **project.ipynb** : Main Jupyter notebook containing data preprocessing, model training, evaluation, SHAP analysis, and salary predictions.  
 - **README.md** : Project documentation (this file).
+- **requirements.txt : Lists all Python libraries and their versions required to run the project.  
+  This file allows anyone to install the exact dependencies using `pip install -r requirements.txt`.
 
 ---
 
@@ -39,7 +41,8 @@ The following Python libraries were used in this project:
 - matplotlib==3.10.0  
 - lightgbm==4.6.0  
 - scikit-learn==1.6.1  
-- seaborn==0.13.2  
+- seaborn==0.13.2
+
 
 ## Project Workflow
 
