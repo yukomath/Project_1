@@ -1,6 +1,6 @@
 # Salary Prediction Project
 
-This project predicts developer salaries using the Stack Overflow Developer Survey 2025 dataset. It includes data preparation, handling missing values and outliers, one-hot encoding of categorical features, and splitting data into training and test sets. Three models—Linear Regression, Random Forest, and LightGBM—are trained and evaluated with R², MAE, and RMSE. Feature importance is analyzed using regression coefficients and SHAP values, and the models are used to predict salaries for a sample developer profile across different countries.
+This project predicts developer salaries using the Stack Overflow Developer Survey 2025 dataset. It includes data preparation, handling missing values and outliers, one-hot encoding of categorical features, and splitting the data into training and test sets. Three models—Linear Regression, Random Forest, and LightGBM—are trained and evaluated using R², MAE, and RMSE. We analyzed SHAP values, and the models are used to predict salaries for a sample developer profile across different countries.
 
 It applies machine learning techniques learned from the Udacity Data Scientist Nanodegree program, including **Linear Regression** and **Random Forest**, as well as **SHAP analysis** to interpret feature importance. Additionally, **LightGBM** is used as an advanced model explored with the help of ChatGPT.
 
@@ -35,8 +35,15 @@ Author: Yuko (GitHub: yukomath)
 ## Acknowledgements
 Stack Overflow Annual Developer Survey 2025 dataset: https://survey.stackoverflow.co/
 
-SHAP documentation: https://shap.readthedocs.io/
-
 Udacity Data Scientist Nanodegree program 
 
-Python libraries: pandas, numpy, scikit-learn, LightGBM, matplotlib, seaborn
+AI Tool : ChatGPT
+
+## libraries Used 
+The following python libraries were used in this project.
+pandas==2.2.2
+numpy==2.0.2
+matplotlib==3.10.0
+lightgbm==4.6.0
+scikit-learn==1.6.1
+seaborn==0.13.2
